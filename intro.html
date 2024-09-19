@@ -16,7 +16,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Ensure particles are behind other content */
+            z-index: 0; /* Lower z-index so content is on top */
         }
 
         /* Text shadow for navbar links */
@@ -27,7 +27,7 @@
         /* For responsive flag image */
         .flag-image {
             position: absolute;
-            top: 20px;
+            top: 50px; /* Changed from 20px to 50px */
             right: -80px;
             max-width: 400px;
             width: 100%;
@@ -41,6 +41,12 @@
                 max-width: 800px;
             }
         }
+
+        /* Navigation styling */
+        nav {
+            position: relative;
+            z-index: 10; /* Ensure the navbar is above the particle background */
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
@@ -53,8 +59,7 @@
     <nav class="belgiumText border-gray-200 dark:bg-red-900">
         <div class="container mx-auto flex flex-wrap items-center justify-between p-4">
             <a href="https://flowbite.com/" class="flex items-center">
-                <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw"
-                    class="h-8" alt="Flowbite Logo" />
+                <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw" class="h-8" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-shadow">Belgium</span>
             </a>
 
@@ -63,7 +68,8 @@
                 class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
@@ -106,7 +112,8 @@
             </span>
         </h1>
         <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-            Belgium is a small country in Europe and the European Union bordered by countries such as France and the Netherlands.
+            Belgium is a small country in Europe and the European Union<br> bordered by countries such as France and the
+            Netherlands.<br> Known for its many tourist attractions, food and culture,<br> Belgium is a truly special country in the world.
         </p>
         <img src="illustration-du-drapeau-union-europeenne_53876-27018.webp" alt="eu flag" class="flag-image">
     </div>

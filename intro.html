@@ -16,7 +16,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Ensure particles are behind other content */
+            z-index: -1;
+            /* Ensure particles are behind other content */
         }
 
         /* Text shadow for navbar links */
@@ -32,33 +33,35 @@
     <div id="particles-js"></div>
 
     <!-- Navigation -->
-<nav class="bg-red-900 border-gray-200 dark:bg-red-900 w-full">
-    <div class="flex items-center justify-between p-4">
-        <a href="https://flowbite.com/" class="flex items-center ml-10">
-            <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw" class="h-8 mr-2" alt="Flowbite Logo" />
-            <span class="self-center text-3xl font-semibold whitespace-nowrap text-white text-shadow">Belgium</span>
-        </a>
+    <nav class="bg-red-900 border-gray-200 dark:bg-red-900 w-full">
+        <div class="flex items-center justify-between p-4">
+            <a href="https://flowbite.com/" class="flex items-center ml-10">
+                <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw"
+                    class="h-8 mr-2" alt="Flowbite Logo" />
+                <span class="self-center text-3xl font-semibold whitespace-nowrap text-white text-shadow">Belgium</span>
+            </a>
 
-        <!-- Mobile Menu Button -->
-        <button data-collapse-toggle="navbar-default" type="button"
-            class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
+            <!-- Mobile Menu Button -->
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
 
-        <!-- Navbar Links -->
-        <div class="hidden md:flex md:space-x-6 text-2xl text-white">
-            <a href="index.html" class="hover:text-yellow-400 font-bold text-shadow">Home</a>
-            <a href="intro.html" class="hover:text-yellow-400 font-bold text-shadow">Intro</a>
-            <a href="food.html" class="hover:text-yellow-400 font-bold text-shadow">Food</a>
-            <a href="landmarks.html" class="hover:text-yellow-400 font-bold text-shadow">Landmarks</a>
-            <a href="celebrities.html" class="hover:text-yellow-400 font-bold text-shadow">Celebrities</a>
+            <!-- Navbar Links -->
+            <div class="hidden md:flex md:space-x-6 text-2xl text-white">
+                <a href="index.html" class="hover:text-yellow-400 font-bold text-shadow">Home</a>
+                <a href="intro.html" class="hover:text-yellow-400 font-bold text-shadow">Intro</a>
+                <a href="food.html" class="hover:text-yellow-400 font-bold text-shadow">Food</a>
+                <a href="landmarks.html" class="hover:text-yellow-400 font-bold text-shadow">Landmarks</a>
+                <a href="celebrities.html" class="hover:text-yellow-400 font-bold text-shadow">Celebrities</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <!-- Main Content with Left-Aligned Text -->
@@ -68,10 +71,11 @@
                 Introduction<br> to Belgium
             </span>
         </h1>
-        <p class="text-3xl font-lg text-gray-400">Belgium is a country in the European Union and Europe <br>bordered by France and the Netherlands.<br> It is well know for its amazing food and culture along with<br> some famous landmarks and celebrities. I am going to present all of that today.</p>
+        <p class="text-3xl font-lg text-gray-400">Belgium is a country in the European Union and Europe <br>bordered by
+            France and the Netherlands.<br> It is well know for its amazing food and culture along with<br> some famous
+            landmarks and celebrities. I am going to present all of that today.</p>
     </div>
 
-    <!-- Initialize Particles.js -->
     <script>
         particlesJS('particles-js', {
             "particles": {

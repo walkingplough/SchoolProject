@@ -31,60 +31,46 @@
     <!-- Particles.js container -->
     <div id="particles-js"></div>
 
-    <nav class="belgiumText border-gray-200 dark:bg-red-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-shadow">Belgium</span>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-red-900 dark:border-red-900">
-                    <li>
-                        <a href="index.html"
-                            class="block py-2 px-3 bg-yellow-700 text-white rounded md:bg-transparent md:text-yellow-700 md:p-0 dark:bg-red-900 dark:text-white font-bold text-lg hover:text-yellow-400 text-shadow"
-                            aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="intro.html"
-                            class="block py-2 px-3 rounded md:p-0 dark:bg-red-900 dark:text-white font-bold text-lg hover:text-yellow-400 text-shadow">Intro</a>
-                    </li>
-                    <li>
-                        <a href="food.html"
-                            class="block py-2 px-3 rounded md:p-0 dark:bg-red-900 dark:text-white font-bold text-lg hover:text-yellow-400 text-shadow">Food</a>
-                    </li>
-                    <li>
-                        <a href="landmarks.html"
-                            class="block py-2 px-3 rounded md:p-0 dark:bg-red-900 dark:text-white font-bold text-lg hover:text-yellow-400 text-shadow">Landmarks</a>
-                    </li>
-                    <li>
-                        <a href="celebrities.html"
-                            class="block py-2 px-3 rounded md:p-0 dark:bg-red-900 dark:text-white font-bold text-lg hover:text-yellow-400 text-shadow">Celebrities</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navigation -->
+<nav class="bg-red-900 border-gray-200 dark:bg-red-900 w-full">
+    <div class="flex items-center justify-between p-4">
+        <a href="https://flowbite.com/" class="flex items-center ml-10">
+            <img src="https://imgs.search.brave.com/cCiiLeAvrJM_VEg174NBQhTFCQ5dcsKrtpfmxerILKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk3LzQyLzc2/LzM2MF9GXzk3NDI3/Njc4X0NZeHljbDVx/WXRJbFEyYW5ncVZE/MXoySnNDaUF0N0V3/LmpwZw" class="h-8 mr-2" alt="Flowbite Logo" />
+            <span class="self-center text-3xl font-semibold whitespace-nowrap text-white text-shadow">Belgium</span>
+        </a>
 
-    <div class="max-w-screen-sm ml-10 px-4 pt-16">
-        <h1
-            class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-left">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r to-yellow-300 from-red-900">
-                Belgium's most<br> famous celebrities</span>
-        </h1>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">Belgium has a lot of famous people, especially sports people such as Romelu Lukaku, Eden Hazard and Kevin De Bruyne who all play for the Belgian National Team. In terms of other areas there is Jean-Claude Van Damme who is a world renowned actor, martial artist and producer.</p>
+        <!-- Mobile Menu Button -->
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="hidden md:flex md:space-x-6 text-2xl text-white">
+            <a href="index.html" class="hover:text-yellow-400 font-bold text-shadow">Home</a>
+            <a href="intro.html" class="hover:text-yellow-400 font-bold text-shadow">Intro</a>
+            <a href="food.html" class="hover:text-yellow-400 font-bold text-shadow">Food</a>
+            <a href="landmarks.html" class="hover:text-yellow-400 font-bold text-shadow">Landmarks</a>
+            <a href="celebrities.html" class="hover:text-yellow-400 font-bold text-shadow">Celebrities</a>
+        </div>
     </div>
-    <img src="spotlight.webp" alt="spotlight" class="absolute top-20 right-20 mt-10 w-[500px] h-auto rounded-lg shadow-lg opacity-15">
+</nav>
+
+
+    <!-- Main Content with Left-Aligned Text -->
+    <div class="container mx-auto px-4 py-16 text-left pt-40">
+        <h1 class="mb-4 text-3xl md:text-5xl lg:text-8xl font-extrabold text-white">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r to-yellow-300 from-red-900">
+                Famous Belgian<br> Celebrities
+            </span>
+        </h1>
+        <p class="text-3xl font-lg text-gray-400">Belgium has many successful people and celebrities<br> that are known all around the world<br> and not just within the country itself. These celebrities<br> represent the country to the world and must sustain<br> a good reputation. Some of Belgium's most famous celebrities are:<br> Kevin De Bruyne (Belgian National Team), Max Verstappen (Formula 1 Driver)<br> and Jean-Claude Van Damme (Actor) </p>
+    </div>
+
     <!-- Initialize Particles.js -->
     <script>
         particlesJS('particles-js', {

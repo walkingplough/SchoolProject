@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.html" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="particles.js"></script>
     <title>Presentation of Belgium</title>
     <meta name="color-scheme" content="only-dark">
     <style>
@@ -25,10 +27,12 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
     </style>
+    <!-- Particles.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body class="bg-black">
+
     <!-- Particles.js container -->
     <div id="particles-js"></div>
 
@@ -42,12 +46,9 @@
             </a>
 
             <!-- Mobile Menu Button -->
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                aria-controls="navbar-default" aria-expanded="false">
+            <button data-collapse-toggle="navbar-default" type="button" class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
@@ -63,7 +64,6 @@
         </div>
     </nav>
 
-
     <!-- Main Content with Left-Aligned Text -->
     <div class="container mx-auto px-4 py-16 text-left pt-40">
         <h1 class="mb-4 text-3xl md:text-5xl lg:text-8xl font-extrabold text-white">
@@ -71,93 +71,11 @@
                 Introduction<br> to Belgium
             </span>
         </h1>
-        <p class="text-3xl font-lg text-gray-400">Belgium is a country in the European Union and Europe <br>bordered by
-            France and the Netherlands.<br> It is well know for its amazing food and culture along with<br> some famous
-            landmarks and celebrities. I am going to present all of that today.</p>
+        <p class="text-3xl font-lg text-gray-400">Belgium is a country in the European Union and Europe <br>bordered by France and the Netherlands.<br> It is well known for its amazing food and culture along with<br> some famous landmarks and celebrities. I am going to present all of that today.</p>
     </div>
 
-    <script>
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                    "value": 80,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#FFFFFF"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": false,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": false,
-                        "mode": "push"
-                    },
-                    "resize": true
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
+    <!-- Link to your separate JavaScript file -->
+    <script src="particles-config.js"></script>
 </body>
 
 </html>

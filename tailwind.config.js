@@ -1,3 +1,4 @@
+// tailwind.config.js or a similar config file
 module.exports = {
     content: [
         "./node_modules/flowbite/**/*.js",
@@ -5,6 +6,9 @@ module.exports = {
     ],
     plugins: [
         require('flowbite/plugin')
-    ]
+    ],
 };
+
+// Make sure to control body overflow to prevent scrolling issues
 document.body.style.overflow = 'hidden';
+
